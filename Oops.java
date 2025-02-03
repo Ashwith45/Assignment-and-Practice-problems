@@ -8,7 +8,7 @@ interface Details {
 
 }
  abstract class Crew implements Details {
-    private String script;
+    private String Script;
     public void crewDetails(){
         System.out.println("Name of The Director :" +director);
         System.out.println("Name of The Music Composer :" +musicComposer);
@@ -18,15 +18,15 @@ interface Details {
 
     }
     private void script(){
-        System.out.println("By Clicking the Below link you can get the Script of this Movie : ");
+        System.out.println("Click the below link  : ");
         System.out.println("www.moviescript.in");
     }
     public String getScript(){
-        return "script";
+        return "Script";
     }
     public void setScript(String draft){
-        this.script = draft;
-        System.out.println("If You need the " + script);
+        this.Script = draft;
+        System.out.println("If You need the " + Script);
     }
     public void displayScriptDetails() {
         script();
